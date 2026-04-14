@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Book_25711.ico" type="image/x-icon">
     <title>Autores da Biblioteca livre</title>
     <link rel="stylesheet" href="syle2.css">
 
@@ -12,55 +13,100 @@
              <br>
             <h1>Biblioteca Livre </h1>
             <br>
-        <hr>      
-        <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> / <a href="">Webtoon</a> / <a href="">Lançamento por década</a> / <a href="Autores.html">Autores</a></nav>
-        </header>                             
-    <div>
+       <hr>      
+        <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> /<a href="Autores.html">Autores</a> / <a href="Contato.html">Contato</a></nav>
+        <hr>
+        <input type="text" id="busca" placeholder="Buscar autores..." onkeyup="buscarLivros()">    
+            <button onclick="limparBusca()">Limpar</button>        
+    </header>                             
+    <div class="livro">
         <figure>
             <figcaption><h2>George Orwell</h2></figcaption>
                 <a href="Georg Orwell.html"><img src="https://static.portugues.com.br/2021/05/george-orwell.jpg"></a>
         </figure>
     </div>
-    <div>
+    <div class="livro">
         <figure>
             <figcaption><h2>Sun Tzu</h2></figcaption>
                 <a href="Sun tzu.html"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/%E5%90%B4%E5%8F%B8%E9%A9%AC%E5%AD%99%E6%AD%A6.jpg"></a>
         </figure>
     </div>
-    <div>
+    <div class="livro">
         <figure>
             <figcaption><h2>Dante Alighieri</h2></figcaption>
                 <a href="Dante Alighieri.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYzFz7uzZUGlVicShtpvy3r0OHkUhrUN075EBVPefbAgkCvOdGL1J4JOJMiLWNhSh2IRLIm1i4qeiZ0OiMRkyTRSxIDWxaoPAqQ5QQE_U1w&s=10"></a>
         </figure>
     </div>
-    <div>
+    <div class="livro">
         <figure>
         <figcaption><h2>Tsugumi Ohba</h2></figcaption>
                 <a href="Tsugumi Ohba.html"><img src="https://static.vecteezy.com/system/resources/previews/024/476/417/large_2x/silhouette-of-unknown-young-teenager-isolated-on-transparent-background-free-photo.jpg"></a>
         </figure>
     </div>
-    <div>
+    <div class="livro">
         <figure>
         <figcaption><h2>Kanehito Yamada</h2></figcaption>
             <a href="Kanehito Yamada.html"><img src="https://static.vecteezy.com/system/resources/previews/024/476/417/large_2x/silhouette-of-unknown-young-teenager-isolated-on-transparent-background-free-photo.jpg"></a>
         </figure>
     </div>
-    <div>
+    <div class="livro">
         <figure>
         <figcaption><h2>Tatsuki Fujimoto</h2></figcaption>
             <a href="Tatsuki Fujimoto.html"><img src="https://static.vecteezy.com/system/resources/previews/024/476/417/large_2x/silhouette-of-unknown-young-teenager-isolated-on-transparent-background-free-photo.jpg"></a>
         </figure>
     </div> 
-    <div>
+    <div class="livro">
         <figure>
             <figcaption><h2>Machado de Assis</h2></figcaption>
                 <a href="Machado de assis.html"><img src="https://s5.static.brasilescola.uol.com.br/be/2022/08/machado-assis.jpg"></a>
         </figure>
     </div>
     </body>
-  </html>
+    <div class="livro">
+        <figure>
+            <figcaption><h2>Nicolau Maquiavel</h2></figcaption>
+                <a href="Nicolau Maquiavel.html"><img src="https://www.infoescola.com/wp-content/uploads/2011/09/maquiavel.jpg"></a>
+        </figure>
+    </div>
+    <div class="livro">
+        <figure>
+            <figcaption><h2>William Shakespeare</h2></figcaption>
+                <a href="William Shakespeare.html"><img src="https://apt-web.transforms.svdcdn.com/production/images-people/Shakespeare-William-_-banner.png?w=1000&h=750&auto=compress%2Cformat&fit=crop&dm=1704733878&s=a3131fae3f3d72f5f07731808a270be4"></a>
+        </figure>
+    </div>      
+    <script>
+    function buscarLivros() {
+        let input = document.getElementById("busca").value.toLowerCase();
+        let livros = document.getElementsByClassName("livro");
+
+        for (let i = 0; i < livros.length; i++) {
+            let titulo = livros[i].innerText.toLowerCase();
+
+            // 👉 Se não digitou nada, mostra tudo
+            if (input === "") {
+                livros[i].style.display = "inline-block";
+            } 
+            // 👉 Se encontrou o texto, mostra
+            else if (titulo.includes(input)) {
+                livros[i].style.display = "inline-block";
+            } 
+            // 👉 Se não encontrou, esconde
+            else {
+                livros[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+    <script>
+    function limparBusca() {
+        document.getElementById("busca").value = "";
+        buscarLivros();
+    }
+    </script>
+</body>
+</html>
       <!--
-    <div>
+    <div class="livro">
         <figure>
             <figcaption><h2></h2></figcaption>
                 <a href=""><img src=""></a>

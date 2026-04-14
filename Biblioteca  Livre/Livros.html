@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livros</title>
+    <link rel="shortcut icon" href="Book_25711.ico" type="image/x-icon">
+    <title>Livros </title>
     <link rel="stylesheet" href="syle.css">
 </head>
 <body>
@@ -12,49 +13,148 @@
             <h1>Biblioteca Livre </h1>
             <br>
         <hr>      
-        <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> / <a href="">Webtoon</a> / <a href="">Lançamento por década</a> / <a href="Autores.html">Autores</a></nav>
-        </header>           
-                        <div>
+                <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> / <a href="Autores.html">Autores</a> / <a href="Contato.html">Contato</a></nav>
+        <hr>
+                <input type="text" id="busca" placeholder="Buscar livros..." onkeyup="buscarLivros()">
+
+<button onclick="limparBusca()">Limpar</button>    
+    
+</header>           
+                        <div class="livro">
                             <figure>
-                                <figcaption><h2>1984 (George Orwell)</h2></figcaption>
+                                <figcaption><h2>1984 <br>(George Orwell)</h2></figcaption>
                                     <a href="https://multimidia.gazetadopovo.com.br/media/info/2022/202209/1984/e-book-1984.pdf"><img src="https://bibliotecamundial.com.br/wp-content/uploads/2024/05/1984-George-Orwell-1.webp"width="200" height="330" style="border-radius: 10px; box-shadow: 0px 0px 5px rgb(94, 94, 94);"></a>
                             </figure>
                         </div>
-                        <div>
+                        <div class="livro">
                             <figure>
-                                <figcaption><h2>Revolução dos Bichos (George Orwell)</h2></figcaption>
+                                <figcaption><h2>Revolução dos Bichos <br>(George Orwell)</h2></figcaption>
                                     <a href="https://multimidia.gazetadopovo.com.br/media/info/2021/202110/bichos/revolucao-dos-bichos.pdf"><img src="https://www.banzeiros.com.br/wp-content/uploads/2022/01/Capa-A-revolucao-dos-bichos.jpg" width="200" height="330" style="border-radius: 10px; box-shadow: 0px 0px 5px rgb(94, 94, 94);" ></a>
                             </figure>
                         </div>
-                        <div>
+                        <div class="livro">
                             <figure>
-                                    <figcaption><h2>A arte da Guerra (Sun Tzu)</h2></figcaption>
+                                    <figcaption><h2>A arte da Guerra <br>(Sun Tzu)</h2></figcaption>
                                         <a href="https://www.sogipa.com.br/web/imgs/arquivos/a-arte-da-guerra5e8e0e84.pdf"><img src="https://m.media-amazon.com/images/I/51Fe45NGwkL.jpg" width="200" height="330" style="border-radius: 10px; box-shadow: 0px 0px 5px rgb(94, 94, 94);"></a>
                             </figure>
                         </div>
-                        <div>
+                        <br>
+                        <br>
+                        <div class="livro">
+
                             <figure>
-                                <figcaption><h2>Dívina Comédia (Dante Alighieri)</h2></figcaption>
+                                <figcaption><h2>Dívina Comédia <br>(Dante Alighieri)</h2></figcaption>
                                     <a href="https://www.dominiopublico.gov.br/download/texto/eb00002a.pdf"><img src="https://m.media-amazon.com/images/I/61Ptt+aJ33L._UF1000,1000_QL80_.jpg"width="200" height="330" style="border-radius: 10px; box-shadow: 0px 0px 5px rgb(94, 94, 94);"></a>
                             </figure>
                         </div>
-                        <div>
+                        <div class="livro">
                             <figure>
-                                <figcaption><h2>Memoria Póstumas (Machado de Assis)</h2></figcaption>
+                                <figcaption><h2>Memoria Póstumas <br>(Machado de Assis)</h2></figcaption>
                                     <a href="https://drive.google.com/file/d/11ltxl-ZOpVeiVKaSJr_yn1_QndMurJn5/view?usp=drive_link"><img src="https://m.media-amazon.com/images/I/91GAAzBixYL._UF1000,1000_QL80_.jpg"></a>
                             </figure>
                         </div>
-                        <div>
+                        <div class="livro">
                             <figure>
-                                <figcaption><h2>Dom Casmurro (Machado de Assis)</h2></figcaption>
+                                <figcaption><h2>Dom Casmurro <br>(Machado de Assis)</h2></figcaption>
                                     <a href="https://drive.google.com/file/d/1yvNfhbK9jl2A05wJ0nFsuqD91PnZy2mZ/view?usp=sharing"><img src="https://m.media-amazon.com/images/I/81XpG2iKTlL._AC_UF1000,1000_QL80_.jpg"></a>
                             </figure>
                         </div>
-                        <div>
+                        <br>
+                        <br>
+                        <div class="livro">
                             <figure>
-                                <figcaption><h2>Quincas Borba (Machado de Assis)</h2></figcaption>
+                                <figcaption><h2>Quincas Borba <br>(Machado de Assis)</h2></figcaption>
                                     <a href="https://drive.google.com/file/d/14Ke6LPr3wP7gwDKDFY6dW3I-fb0kuqSD/view?usp=sharing"><img src="https://bibliotecamundial.com.br/wp-content/uploads/2025/02/QUINCAS-BORBA-Machado-de-Assis.webp"></a>
                             </figure>
                         </div>
+                         <div class="livro">
+                            <figure>
+                                 <figcaption><h2>O Princípe <br>(Nicolau Maquiavel)</h2></figcaption>
+                                    <a href=""><img src="https://images.tcdn.com.br/img/img_prod/1271663/o_principe_nicolau_maquiavel_439_1_6b4d7b4104c6597152e7fff4ff870623.jpg"></a>
+                            </figure>
+                        </div> 
+                        <div class="livro">
+                            <figure>
+                                <figcaption><h2>O mercador de Veneza <br>(William Shakespeare)</h2></figcaption>
+                                    <a href="https://drive.google.com/file/d/1Md1K5Aaw11l73VA9mKTxCGGxZ-X62uLj/view?usp=drive_link"><img src="https://m.media-amazon.com/images/I/81D6r13eE3L._UF1000,1000_QL80_.jpg"></a>
+                            </figure>
+                        </div>   
+                        <br>                    
+                        <br>
+                        <div class="livro">
+                            <figure>
+                                <figcaption><h2>Sonho de uma noite de verão <br>(William Shakespeare)</h2></figcaption>
+                                    <a href="https://drive.google.com/file/d/1MPqqG-MQ3Ar3hiaawwZjaKZ6PS6ZYvhr/view?usp=drive_link"><img src="https://www.lpm.com.br/livros/imagens/sonho_de_uma_noite_de_verao_nova_9788525425584_hd.jpg"></a>
+                            </figure>
+                        </div>
+                        <div class="livro">
+                            <figure>
+                                <figcaption><h2>Romeu e Julieta <br>(William Shakespeare)</h2></figcaption>
+                                    <a href="https://drive.google.com/file/d/14C3oopK0fZoYi3K7x8ShY74HyrB3rwsk/view?usp=drive_link"><img src="https://m.media-amazon.com/images/I/91nx1y9j+fS._AC_UF1000,1000_QL80_.jpg"></a>
+                            </figure>
+                        </div>
+                        <div class="livro">
+                            <figure>
+                                <figcaption><h2>A megera domada <br>(William Shakespeare)</h2></figcaption>
+                                    <a href="https://drive.google.com/file/d/10Jc157i9YXYoW6fzXCJ-hy8CDEvaw3Hv/view?usp=drive_link"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_652070-MLB109457418269_032026-T.webp"></a>
+                            </figure>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="livro">
+                            <figure>
+                                <figcaption><h2>Macbeth <br>(William Shakespeare)</h2></figcaption>
+                                    <a href="https://drive.google.com/file/d/1vhGTuslvqhXTyRYeb_MBHSs1e4yL16-3/view?usp=drive_link"><img src="https://m.media-amazon.com/images/I/81B+LyMwNZL._AC_UF1000,1000_QL80_.jpg"></a>
+                            </figure>
+                        </div>
+                        <div class="livro">
+                            <figure>
+                                <figcaption><h2>Hamlet<br> (William Shakespeare)</h2></figcaption>
+                                    <a href="https://drive.google.com/file/d/1bc-xSgtf-u7Lood5dMS3oi9DMEsKoRFs/view?usp=drive_link"><img src="https://cdn.kobo.com/book-images/5fc4252b-1c4f-40ef-9975-22982c94f12c/353/569/90/False/hamlet-prince-of-denmark-23.jpg"></a>
+                            </figure>
+                        </div> 
+                        <div class="livro">
+                            <figure>
+                                <figcaption><h2>Otelo<br>(William Shakespeare)</h2></figcaption>
+                                    <a href="https://drive.google.com/file/d/1MZFhsQo8F8P98HN0inxTcDg0J1rMYFkN/view?usp=drive_link, "><img src="https://m.media-amazon.com/images/I/81nCa2eBYML._UF1000,1000_QL80_.jpg"></a>
+                            </figure>
+                        </div>                
+<script>
+function buscarLivros() {
+    let input = document.getElementById("busca").value.toLowerCase();
+    let livros = document.getElementsByClassName("livro");
+
+    for (let i = 0; i < livros.length; i++) {
+        let titulo = livros[i].innerText.toLowerCase();
+
+        // 👉 Se não digitou nada, mostra tudo
+        if (input === "") {
+            livros[i].style.display = "inline-block";
+        } 
+        // 👉 Se encontrou o texto, mostra
+        else if (titulo.includes(input)) {
+            livros[i].style.display = "inline-block";
+        } 
+        // 👉 Se não encontrou, esconde
+        else {
+            livros[i].style.display = "none";
+        }
+    }
+}
+</script>
+<script>
+function limparBusca() {
+    document.getElementById("busca").value = "";
+    buscarLivros();
+}
+</script>
 </body>
 </html>
+      <!--
+<div class="livro">
+    <figure>
+        <figcaption><h2></h2></figcaption>
+            <a href=""><img src=""></a>
+    </figure>
+</div>
+            -->

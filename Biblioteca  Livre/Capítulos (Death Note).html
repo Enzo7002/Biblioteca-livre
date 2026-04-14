@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Book_25711.ico" type="image/x-icon">
     <title>Capitulos (Death Note)</title>
         <link rel="stylesheet" href="style(cap).css">
 
@@ -13,8 +14,9 @@
                 <h1>Biblioteca Livre </h1>
             <br>
         <hr>      
-        <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> / <a href="">Webtoon</a> / <a href="">Lançamento por década</a> / <a href="Autores.html">Autores</a></nav>
+       <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> /<a href="Autores.html">Autores</a> / <a href="Contato.html">Contato</a></nav>
 </header>    
+<br>
 <a href="https://drive.google.com/open?id=1lNzmSPwlci-KwT_fx-p0CebN7Ed6aQj8&usp=drive_copy"><div>Capítulo 0</div></a>
 <a href="https://drive.google.com/open?id=1YPeJBRyHl9ct0BeuUPNwbDE84MNsCT9b&usp=drive_copy"><div>Capítulo 1</div></a>
 <a href="https://drive.google.com/open?id=16oo5D-j_rqLdErBWCOLg10fkUKA221ZJ&usp=drive_copy"><div>Capítulo 2</div></a>
@@ -142,5 +144,31 @@
 <br>
 <a href="https://drive.google.com/open?id=1CbvLrZF1PJceuOHlK0pMu8U0NVBoZrHA&usp=drive_copy"><div>Capítulo 107</div></a>
 <a href="https://drive.google.com/open?id=1zBaf-8-QuwLbRONtCJc1JDDvosnXqRzW&usp=drive_copy"><div>Capítulo 108</div></a>
+<script>
+    
+    let mybutton = document.getElementById("btnScrollTop");
+    
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+
+    function topFunction() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+      });
+    }
+</script>
+    <button onclick="topFunction()" id="btnScrollTop" title="Voltar ao topo">
+  ↑
+</button>
 </body>
 </html>

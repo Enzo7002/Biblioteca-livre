@@ -1,18 +1,30 @@
 @charset "UTF-8";
 
 body{text-align: center;
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgba(214, 214, 214, 0.767));
+   background-image: url('https://img.freepik.com/fotos-gratis/fundo-de-chao-de-madeira_53876-88628.jpg?semt=ais_hybrid&w=740&q=80'); 
+    background-repeat: repeat; 
+    background-size: 250vh; 
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     background-attachment: fixed;
     margin: 0 }
 a { text-decoration: none;
     color: rgb(255, 255, 255);}
-h1 {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1 {font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-style: italic;
 font-size: xx-large;
-color: rgb(255, 255, 255);}
+color: rgb(255, 255, 255);
+text-shadow: 0vh 0vh 3vh rgb(109, 109, 109);
+background: linear-gradient(to top, rgb(241, 241, 241), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
 
+h2 {text-shadow: 0vh 0vh 3vh rgb(255, 255, 255); background: linear-gradient(to top, rgb(7, 7, 7), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+font-family:Georgia, 'Times New Roman', Times, serif}
+
+figure {text-align: center; background-color: rgba(0, 0, 0, 0.050); border-radius: 10px }
 img {width: 45vh; height: 45vh; border-radius: 10px; box-shadow: 0px 0px 5px rgb(94, 94, 94);border: 5px solid rgba(255, 0, 0, 0)}
 
 figure {text-align: center;
@@ -23,5 +35,5 @@ height: 40vh;
 margin: auto;}
 
 img:hover {border: 5px solid rgb(100, 172, 255)}
-header {  background-image: linear-gradient(to bottom,rgb(19, 19, 19),rgba(10, 10, 10, 0.767)); padding-bottom: 1vh; border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;color: white }
+header {  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.900),rgba(43, 43, 43, 0.965)),   url("https://png.pngtree.com/background/20230527/original/pngtree-an-old-bookcase-in-a-library-picture-image_2760144.jpg"); padding-bottom: 1vh; border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;color: white; }

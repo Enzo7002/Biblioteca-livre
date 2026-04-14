@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Book_25711.ico" type="image/x-icon">
     <title>Capítulos (Chainsaw Man)</title>
     <link rel="stylesheet" href="style(cap).css">
 
@@ -13,10 +14,11 @@
             <h1>Biblioteca Livre </h1>
             <br>
         <hr>      
-        <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> / <a href="">Webtoon</a> / <a href="">Lançamento por década</a> / <a href="Autores.html">Autores</a></nav>
-        </header>    
-      
-        <a href="https://drive.google.com/file/d/1mtSZ3f9vssjRxwH6v7ZGAo1NqXLybjT3/view?usp=drive_link"><div>Capítulo 1</div></a>
+        <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> /<a href="Autores.html">Autores</a> / <a href="Contato.html">Contato</a></nav>
+
+</header>
+      <br>
+<a href="https://drive.google.com/file/d/1mtSZ3f9vssjRxwH6v7ZGAo1NqXLybjT3/view?usp=drive_link"><div>Capítulo 1</div></a>
         <a href="https://drive.google.com/file/d/1MmsKEmXz5KjQzh1GvWfk1HFrDxM0Z6IB/view?usp=drive_link"><div>Capítulo 2</div></a>
         <a href="https://drive.google.com/file/d/1NXDdUsbgNMbUIwUrfSBMaofchj6Bmpo8/view?usp=drive_link"><div>Capítulo 3</div></a>
         <a href="https://drive.google.com/file/d/1vpOc58GZFvX5_7jNpelv_GNy285r06KN/view?usp=drive_link"><div>Capítulo 4</div></a>
@@ -286,5 +288,31 @@
 <a href="https://drive.google.com/file/d/1LiuM-TL8FadIsBKQemeRWz8WSyauqkv5/view?usp=drive_link"><div>Capítulo 231</div></a>
 <a href="https://drive.google.com/file/d/1UpeYwtIxcGyYgok5A9faOLVA_Da8N5oh/view?usp=drive_link"><div>Capítulo 232</div></a>
 <br>
+<script>
+    
+    let mybutton = document.getElementById("btnScrollTop");
+    
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+
+    function topFunction() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+      });
+    }
+</script>
+    <button onclick="topFunction()" id="btnScrollTop" title="Voltar ao topo">
+  ↑
+</button>
 </body>
 </html>
