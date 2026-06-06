@@ -14,20 +14,23 @@
             <br>
         <hr>      
        <nav><a href="Projeto da Biblioteca.html">Início</a> / <a href="Livros.html">Livros</a> / <a href="Sumário (Manga).html">Mangas</a> / <a href="Autores.html">Autores</a> / <a href="Contato.html">Contato</a></nav>
-        </header>    
-            <div>
+        <hr>   
+       <input type="text" id="busca" placeholder="Buscar Mangas..." onkeyup="buscarLivros()">    
+                <button onclick="limparBusca()">Limpar</button>   
+    </header>    
+            <div class="livro">
                 <figure>
                     <figcaption><h2>Death Note <br>(Tsugumi Ohba)</h2></figcaption>
                             <a href="Capítulos (Death Note).html"><img src="https://m.media-amazon.com/images/I/81iDNjn-r3L.jpg"></a>
                 </figure>
             </div>
-            <div>
+            <div class="livro">
                 <figure>
                     <figcaption><h2>Frieren <br>(Kanehito Yamada)</h2></figcaption>
                         <a href="Capítulos (Frieren).html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Frieren_Beyond_Journey%27s_End.jpg/250px-Frieren_Beyond_Journey%27s_End.jpg"></a>
                 </figure>
             </div>
-            <div>
+            <div class="livro">
                 <figure>
                     <figcaption><h2>Chainsaw Man <br>(Tatsuki Fujimoto)</h2></figcaption>
                         <a href="Capítulos (Chainsaw Man).html"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781974709939/chainsaw-man-vol-1-9781974709939_hr.jpg"></a>
@@ -158,7 +161,37 @@
                                 <figcaption><h2>Dr. Stone<br>( Riichiro Inagaki)</h2></figcaption>
                                     <a href="Capítulos (Dr. Stone).html"><img src="https://m.media-amazon.com/images/I/91SLpHwjp8L._AC_UF1000,1000_QL80_.jpg"></a>
                             </figure>
-                        </div>                      
+                        </div>
+<script>
+                            
+function buscarLivros() {
+    let input = document.getElementById("busca").value.toLowerCase();
+    let livros = document.getElementsByClassName("livro");
+
+    for (let i = 0; i < livros.length; i++) {
+        let titulo = livros[i].innerText.toLowerCase();
+
+        // 👉 Se não digitou nada, mostra tudo
+        if (input === "") {
+            livros[i].style.display = "inline-block";
+        } 
+        // 👉 Se encontrou o texto, mostra
+        else if (titulo.includes(input)) {
+            livros[i].style.display = "inline-block";
+        } 
+        // 👉 Se não encontrou, esconde
+        else {
+            livros[i].style.display = "none";
+        }
+    }
+}
+</script>
+<script>
+function limparBusca() {
+    document.getElementById("busca").value = "";
+    buscarLivros();
+}
+</script>                      
 </body>
 </html>
 
