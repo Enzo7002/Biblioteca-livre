@@ -1,0 +1,25 @@
+a {text-decoration: none;color: aliceblue;}    
+.central1 {width: 70vw; height: 98.9vh;margin: 0%;
+}
+.central2 {width: 15vw; height: 100vh; display: flex ;
+    justify-content: center;
+background-color: rgb(56, 56, 56); margin: 0%;}
+.conteiner {display: inline-flex; margin: 0%;}
+.texto {align-items: center;
+color: aliceblue;
+font-family: cursive;
+font-style: italic;
+font-size: 200%; margin: 0%;
+text-shadow: 0vh 0h 5vh rgb(0, 0, 0);}
+
+.inferior { position: absolute;
+    bottom: 0;
+color: aliceblue;
+font-family: cursive;
+font-style: italic;
+font-size: 150%;
+margin-bottom: 1%;
+text-shadow: 0vh 0h 5vh rgb(0, 0, 0);}
+
+
+
