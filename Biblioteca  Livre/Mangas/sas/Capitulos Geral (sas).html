@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../Book_25711.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulos Gerais (sas)</title>
+        <link rel="stylesheet" href="../style(cap).css">
+
+</head>
+<body>
+<header>
+            <br>
+                <h1>Biblioteca Livre </h1>
+            <br>
+        <hr>      
+       <nav><a href="../../Projeto da Biblioteca.html">Início</a> / <a href="../../Livros.html">Livros</a> / <a href="../../Sumário (Manga).html">Mangas</a> / <a href="../../Autores.html">Autores</a> / <a href="../../Contato.html">Contato</a></nav>
+        
+</header>    
+<br>
+<script>
+    
+    let mybutton = document.getElementById("btnScrollTop");
+    
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+
+    function topFunction() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+      });
+    }
+</script>
+    <button onclick="topFunction()" id="btnScrollTop" title="Voltar ao topo">
+  ↑
+</button> </body> </html>
